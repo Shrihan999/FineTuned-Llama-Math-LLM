@@ -24,7 +24,7 @@ This project implements a fine-tuned Llama-3.2 3B model that:
 1. Is fine-tuned on the **MetaMath QA dataset** with 395k+ math QA pairs.  
 2. Uses **LoRA (Low-Rank Adaptation)** and **gradient checkpointing** to reduce training overhead.  
 3. Applies **4-bit quantization** to reduce model size without sacrificing performance.  
-4. Is evaluated on a custom **multiple-choice benchmark of 1,000 questions** for robust accuracy assessment.
+4. Is evaluated on a custom **multiple-choice benchmark of 200 questions** for robust accuracy assessment.
 
 ---
 
@@ -42,7 +42,7 @@ This project implements a fine-tuned Llama-3.2 3B model that:
 1. **Data Preparation** – Load and preprocess MetaMath QA dataset.  
 2. **Fine-Tuning** – Adapt the base Llama model using LoRA with gradient checkpointing.  
 3. **Quantization** – Convert model weights to 4-bit precision for efficient inference.  
-4. **Evaluation** – Test on custom 1,000-question multiple-choice set to validate accuracy improvements.  
+4. **Evaluation** – Test on custom 200-question multiple-choice set to validate accuracy improvements.  
 5. **Deployment** – Provide inference scripts for running locally on user machines.
 
 ---
@@ -126,7 +126,7 @@ fine-tuned-llama-math/
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/fine-tuned-llama-math-solver.git
+git clone https://github.com/shrihan999/fine-tuned-llama-math-solver.git
 cd fine-tuned-llama-math-solver
 
 # (Optional) Create and activate virtual environment
